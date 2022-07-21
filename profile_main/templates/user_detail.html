@@ -1,0 +1,4 @@
+<h1>{{ object.id }}</h1>
+{% for item in character %}
+<h4>{{ item.characteristic_id.name }}: {{ item.value }} </h4>
+{% endfor %}

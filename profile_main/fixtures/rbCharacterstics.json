@@ -1,0 +1,29 @@
+[
+    {
+        "model": "profile_main.rbCharacteristics",
+        "pk": 1,
+        "fields": {
+            "name": "Вес",
+            "code": "weight",
+            "unit": "кг"
+        }
+    },
+    {
+        "model": "profile_main.rbCharacteristics",
+        "pk": 2,
+        "fields": {
+            "name": "Рост",
+            "code": "height",
+            "unit": "см"
+        }
+    },
+        {
+        "model": "profile_main.rbCharacteristics",
+        "pk": 3,
+        "fields": {
+            "name": "Сила",
+            "code": "strong",
+            "unit": "н"
+        }
+    }
+]
