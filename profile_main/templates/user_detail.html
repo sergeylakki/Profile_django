@@ -1,4 +1,13 @@
+<script src="https://ajax.googleapis.com/ajax/libs/cesiumjs/1.78/Build/Cesium/Cesium.js"></script>
 <h1>{{ object.id }}</h1>
-{% for item in character %}
-<h4>{{ item.characteristic_id.name }}: {{ item.value }} </h4>
+
+{% for item in object.characterstics %}
+<a href="{% url 'character-update' item.id %}"><h4>{{ item.id }}. {{ item.characteristic_id.name }}: {{ item.value }} </h4></a>
 {% endfor %}
+<a href="{% url 'character-add' %}">Добавить характеристику</a>
+
+<h1>Действия</h1>
+{% for item in object.actions %}
+<a href="{% url 'character-update' item.id %}"><h4>{{ item.id }}. {{ item.action_id.name }}: {{ item.get_str_value }} </h4></a>
+{% endfor %}
+<a href="{% url 'action-add' %}">Добавить действие</a>

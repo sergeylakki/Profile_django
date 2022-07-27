@@ -36,7 +36,7 @@ router = routers.DefaultRouter()
 router.register(r'users', UserViewSet)
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('api/', include(router.urls)),
+    path('api/', include(router.urls), name='api'),
     path('', include('profile_main.urls')),
     path('accounts/', include('allauth.urls')),
     path('api-auth/', include('rest_framework.urls', namespace='rest_framework'))

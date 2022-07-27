@@ -1,0 +1,41 @@
+[
+    {
+        "model": "profile_main.rbAction",
+        "pk": 1,
+        "fields": {
+            "name": "Бег",
+            "code": "run",
+            "unit": "км,мин.",
+            "type": "Float",
+            "is_vector": "True",
+            "created_at": "2020-10-01",
+            "updated_at": "2020-10-01"
+        }
+    },
+    {
+        "model": "profile_main.rbAction",
+        "pk": 2,
+        "fields": {
+            "name": "Зарядка(отж,под.присед.)",
+            "code": "physical",
+            "unit": "отжиманий,подтягиваний,присиданий",
+            "type": "Integer",
+            "is_vector": "True",
+            "created_at": "2020-10-01",
+            "updated_at": "2020-10-01"
+        }
+    },
+        {
+        "model": "profile_main.rbAction",
+        "pk": 3,
+        "fields": {
+            "name": "Чтание книги",
+            "code": "read_book",
+            "unit": "лист.",
+            "type": "Integer",
+            "is_vector": "False",
+            "created_at": "2020-10-01",
+            "updated_at": "2020-10-01"
+        }
+    }
+]
